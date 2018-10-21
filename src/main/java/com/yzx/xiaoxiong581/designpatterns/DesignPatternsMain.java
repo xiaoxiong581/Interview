@@ -1,5 +1,6 @@
 package com.yzx.xiaoxiong581.designpatterns;
 
+import com.yzx.xiaoxiong581.designpatterns.builder.Student;
 import com.yzx.xiaoxiong581.designpatterns.factory.Behavior;
 import com.yzx.xiaoxiong581.designpatterns.factory.impl.Person;
 import com.yzx.xiaoxiong581.designpatterns.factory.impl.Pig;
@@ -31,5 +32,10 @@ public class DesignPatternsMain {
         pig.eat();
         pig.sleep();
         System.out.println("****************工厂模式 end****************");
+
+        // 建造者模式.
+        System.out.println("****************建造者模式 begin****************");
+        System.out.println(new Student.StudentBuilder().setAge(26).build());
+        System.out.println("****************建造者模式 begin****************");
     }
 }
