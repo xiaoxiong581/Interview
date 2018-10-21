@@ -2,6 +2,8 @@ package com.yzx.xiaoxiong581.designpatterns.singleton;
 
 /**
  * @author xiaoxiong581
+ *
+ * 特点: 只实例化一个对象.
  */
 public class Singleton {
     private volatile static Singleton instance;
