@@ -3,6 +3,9 @@ package com.yzx.xiaoxiong581.proxy.dynamic;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
+/**
+ * @author xiaoxiong581
+ */
 public class DynamicProxyHandler implements InvocationHandler {
     private Object realHandler;
 

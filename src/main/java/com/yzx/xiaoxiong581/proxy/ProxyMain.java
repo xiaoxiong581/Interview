@@ -7,6 +7,9 @@ import com.yzx.xiaoxiong581.proxy.statics.StaticProxyHandler;
 
 import java.lang.reflect.Proxy;
 
+/**
+ * @author xiaoxiong581
+ */
 public class ProxyMain {
     public static void main(String[] args) {
         // 静态实现.
@@ -16,6 +19,6 @@ public class ProxyMain {
         // 动态实现.
         DynamicProxyHandler dynamicProxyHandler = new DynamicProxyHandler(new RealHandler());
         Action proxy = (Action) Proxy.newProxyInstance(ClassLoader.getSystemClassLoader(), new Class[]{Action.class}, dynamicProxyHandler);
-        proxy.doAnotherthing();
+        proxy.doSomething();
     }
 }
