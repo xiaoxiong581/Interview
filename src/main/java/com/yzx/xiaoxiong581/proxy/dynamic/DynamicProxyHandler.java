@@ -6,15 +6,18 @@ import java.lang.reflect.Method;
 /**
  * @author xiaoxiong581
  */
-public class DynamicProxyHandler implements InvocationHandler {
+public class DynamicProxyHandler implements InvocationHandler
+{
     private Object realHandler;
 
-    public DynamicProxyHandler(Object realHandler) {
+    public DynamicProxyHandler(Object realHandler)
+    {
         this.realHandler = realHandler;
     }
 
     @Override
-    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable
+    {
         System.out.println("dynamic proxy handler");
         return method.invoke(realHandler, args);
     }

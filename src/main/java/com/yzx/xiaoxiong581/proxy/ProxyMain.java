@@ -10,8 +10,10 @@ import java.lang.reflect.Proxy;
 /**
  * @author xiaoxiong581
  */
-public class ProxyMain {
-    public static void main(String[] args) {
+public class ProxyMain
+{
+    public static void main(String[] args)
+    {
         // 静态实现.
         StaticProxyHandler staticProxyHandler = new StaticProxyHandler(new RealHandler());
         staticProxyHandler.doSomething();

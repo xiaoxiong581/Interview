@@ -14,8 +14,10 @@ import com.yzx.xiaoxiong581.designpatterns.singleton.Singleton;
 /**
  * @author xiaoxiong581
  */
-public class DesignPatternsMain {
-    public static void main(String[] args) throws Exception {
+public class DesignPatternsMain
+{
+    public static void main(String[] args) throws Exception
+    {
         // 单例模式.
         System.out.println("****************单例模式 begin****************");
         Singleton.getInstance().doSomething();
